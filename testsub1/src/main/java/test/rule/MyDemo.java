@@ -12,7 +12,7 @@ package test.rule;
  * @CreateDate 2016年9月26日 <br>
  */
 
-public class Test {
+public class MyDemo {
 
     public String test1(String a) {
         return a + "1";
@@ -27,7 +27,8 @@ public class Test {
      * @return <br>
      */
     public String test2(String a) {
-        return a + "11";
+        String a1 = a + "11";
+        return a1;
     }
 
     /**
@@ -38,14 +39,8 @@ public class Test {
      *         <br>
      */
     public void test3() {
-        String a1 = "1";
-        String s = "";
-        if ("111".equals(a1)) {
-            a1 = s;
-        } else if ("222".equals(a1)) {
-            a1 = s;
-        }
         
+
     }
 
     /**
