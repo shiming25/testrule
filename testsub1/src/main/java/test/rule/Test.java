@@ -15,6 +15,7 @@ package test.rule;
 public class Test {
 
     public String test1(String a) {
+        a = "1";
         return "";
     }
 
@@ -23,10 +24,11 @@ public class Test {
      * 
      * @author Administrator<br>
      * @taskId <br>
-     * @param a
+     * @param a 1
      * @return <br>
      */
     public String test2(String a) {
+        a = a + 1;
         return "";
     }
 
