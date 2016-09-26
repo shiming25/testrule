@@ -40,10 +40,9 @@ public class Test {
     public void test3() {
         String a1 = "1";
         String s = "";
-        s = "1";
-        if (a1.equals("111")) {
+        if ("111".equals(a1)) {
             a1 = s;
-        } else if (a1.equals("222")) {
+        } else if ("222".equals(a1)) {
             a1 = s;
         }
     }
