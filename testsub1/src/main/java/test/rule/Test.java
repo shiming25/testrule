@@ -45,6 +45,7 @@ public class Test {
         } else if ("222".equals(a1)) {
             a1 = s;
         }
+        test2(a1);
     }
 
     /**
@@ -55,7 +56,7 @@ public class Test {
      * @param args <br>
      */
     public static void main(String[] args) {
-
+        // 空方法
     }
 
 }
