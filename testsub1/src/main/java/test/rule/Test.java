@@ -15,8 +15,7 @@ package test.rule;
 public class Test {
 
     public String test1(String a) {
-        String a1 = a + "1";
-        return a1;
+        return a + "1";
     }
 
     /**
@@ -28,8 +27,7 @@ public class Test {
      * @return <br>
      */
     public String test2(String a) {
-        String a1 = a + "11";
-        return a1;
+        return a + "11";
     }
 
     /**
