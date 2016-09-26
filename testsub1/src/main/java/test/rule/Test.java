@@ -35,10 +35,27 @@ public class Test {
      * 
      * @author Administrator<br>
      * @taskId <br>
+     *         <br>
+     */
+    public void test3() {
+        String a1 = "1";
+        String s = "";
+        s = "1";
+        if (a1.equals("111")) {
+            a1 = s;
+        } else if (a1.equals("222")) {
+            a1 = s;
+        }
+    }
+
+    /**
+     * Description: <br>
+     * 
+     * @author Administrator<br>
+     * @taskId <br>
      * @param args <br>
      */
     public static void main(String[] args) {
-        
 
     }
 
