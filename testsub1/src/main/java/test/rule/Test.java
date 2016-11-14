@@ -3,6 +3,9 @@
  ****************************************************************************************/
 package test.rule;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 /**
  * <Description> <br>
  * 
@@ -14,6 +17,19 @@ package test.rule;
 
 public class Test {
 
+    /**
+     * logger
+     */
+    private static final Log LOGGER = LogFactory.getLog(Test.class);
+
+    /**
+     * 
+     * Description: test<br> 
+     * @author shiming<br>
+     * @taskId <br>
+     * @param a test
+     * @return <br>
+     */
     public String test1(String a) {
         return a + "1";
     }
@@ -41,22 +57,48 @@ public class Test {
         String a1 = "1";
         String s = "";
         if ("111".equals(a1)) {
-            a1 = s;
+            System.out.println(s);
         } else if ("222".equals(a1)) {
-            a1 = s;
+            System.out.println(s + "11");
         }
-        
+
     }
 
     /**
      * Description: <br>
      * 
-     * @author Administrator<br>
+     * @author shiming<br>
      * @taskId <br>
      * @param args <br>
+     * @throws InterruptedException
      */
     public static void main(String[] args) {
-        // 空方法
+        com.alibaba.dubbo.container.Main.main(args);
+        // ClassPathXmlApplicationContext context = null;
+        // try {
+        // context = new ClassPathXmlApplicationContext("classpath:config/spring/root-context.xml");
+        // context.start();
+        //
+        // } catch (Exception e) {
+        // LOGGER.error("== DubboProvider context start error:", e);
+        // } finally {
+        // if (null != context) {
+        // context.close();
+        // }
+        // }
+        // LOGGER.info("ttttttttttttttttttt");
+        // synchronized (Test.class) {
+        // boolean b = true;
+        // while (b) {
+        // try {
+        // Test.class.wait();
+        // } catch (InterruptedException e) {
+        // LOGGER.error("== synchronized error:", e);
+        // throw e;
+        // }
+        // }
+        // }
+
     }
 
 }
